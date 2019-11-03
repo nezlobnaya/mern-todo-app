@@ -4,16 +4,16 @@ import TodoList from './components/TodoList/TodoList'
 import CreateTodo from './components/CreateTodo/CreateTodo'
 import EditTodo from './components/EditTodo/EditTodo'
 import logo from './logo.png'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import "bootstrap/dist/css/bootstrap.min.css"
 import './App.css';
 
 function App() {
   return (  
       <div className='container'>
         <nav className='navbar navbar-expand-lg navbar-light bg-light'>
-          <Link to='/' className='nabvar-brand'>Mern-Stack Todo App</Link>
           <img src={logo} width='30' height='30' alt='coding smart' />
-          <div className='collapse nav-collapse'>
+          <Link to='/' className='nabvar-brand'>Mern-Stack Todo App</Link>
+          <div className='collpase nav-collapse'>
             <ul className='navbar-nav mr-auto'>
               <li className='navbar-item'>
               <Link to="/" className="nav-link">Todos</Link>
