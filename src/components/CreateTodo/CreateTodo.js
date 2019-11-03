@@ -9,8 +9,18 @@ const CreateTodo = (props) => {
         completed: false
     })
     const handleChange = event => setTodo({...todo, [event.target.name]: event.target.value});
-    const handleSubmit = event => {event.preventDefault();
+    const handleSubmit = event => {
+        event.preventDefault();
+        console.log(`Form submitted:`)
+        console.log(`Todo description: ${todo.description}`)
+        console.log(`Todo responsible: ${todo.responsible}`)
+        console.log(`Form priority: ${todo.priority}`)
+        console.log(`Todo completed: ${todo.completed}`)
         setTodo(todo);
+        setTodo({description: '',
+        responsible: '',
+        priority: '',
+        completed: false})
       };
 
     return ( 
